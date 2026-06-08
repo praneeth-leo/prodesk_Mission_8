@@ -69,7 +69,7 @@ export default function Home() {
       if (!hasAuthToken) {
         dispatch({
           type: 'error',
-          error: 'Missing VITE_TMDB_TOKEN environment variable. Copy .env.example to .env and restart the dev server.',
+          error: 'Missing VITE_TMDB_TOKEN environment variable. Add it locally in .env or in Vercel Project Settings, then redeploy.',
         })
         return
       }
